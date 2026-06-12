@@ -4,7 +4,7 @@ This prototype is a guided workbench for checking label artwork against applicat
 
 ## 3-Minute Demo
 
-1. Open the deployed app URL listed in `README.md`.
+1. Open [https://ttb-label-review-workbench.vercel.app](https://ttb-label-review-workbench.vercel.app).
 2. Choose **Try demo cases**.
 3. Confirm the first packet's application fields.
 4. Go to **Run checks** and choose **Run all packets**.

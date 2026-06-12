@@ -6,7 +6,7 @@ The product concept is a **guided evidence packet**. Instead of exposing a dense
 
 ## Review Entry Point
 
-- Live demo: _add deployed URL here after Vercel publish_
+- Live demo: [https://ttb-label-review-workbench.vercel.app](https://ttb-label-review-workbench.vercel.app)
 - 3-minute walkthrough: [REVIEWER_GUIDE.md](./REVIEWER_GUIDE.md)
 - User workflow: [USER_GUIDE.md](./USER_GUIDE.md)
 
