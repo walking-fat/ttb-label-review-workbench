@@ -27,7 +27,7 @@ export function exportReviewCsv(packets: ReviewPacket[]) {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "label-triage-brief.csv";
+  link.download = "label-review-workbench-summary.csv";
   link.click();
   URL.revokeObjectURL(url);
 }

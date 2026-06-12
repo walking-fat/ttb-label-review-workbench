@@ -16,7 +16,7 @@ export function IntakePanel({ isBusy, queueCount, onUpload, onLoadSamples, onRun
       <header>
         <p className="kicker">Start here</p>
         <h2>Start a label review queue</h2>
-        <p>Add label artwork or load sample cases. Each queue moves through application data, verification, and findings.</p>
+        <p>Add label artwork or load demo cases. Each queue moves through application data, verification, and findings.</p>
       </header>
       <div className="intake-choices">
         <label className="choice-card upload-choice">
@@ -50,7 +50,7 @@ export function IntakePanel({ isBusy, queueCount, onUpload, onLoadSamples, onRun
           </button>
           <button type="button" onClick={onResetSamples}>
             <RotateCcw aria-hidden="true" />
-            Reset to samples
+            Reset demo cases
           </button>
         </div>
       )}

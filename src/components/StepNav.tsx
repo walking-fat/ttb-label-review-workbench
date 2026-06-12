@@ -1,7 +1,7 @@
 export type ReviewStep = "intake" | "application" | "verify" | "results";
 
 const steps: { id: ReviewStep; title: string; helper: string }[] = [
-  { id: "intake", title: "Choose labels", helper: "Upload or use samples" },
+  { id: "intake", title: "Choose labels", helper: "Upload or try demos" },
   { id: "application", title: "Confirm data", helper: "Review expected fields" },
   { id: "verify", title: "Run checks", helper: "Extract and compare" },
   { id: "results", title: "Review packet", helper: "Act on findings" }

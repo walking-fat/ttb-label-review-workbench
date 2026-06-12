@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./styles.css";
 
 export const metadata: Metadata = {
-  title: "Label Triage Pilot",
+  title: "Label Review Workbench",
   description: "AI-assisted alcohol label review prototype."
 };
 

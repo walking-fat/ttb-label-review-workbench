@@ -18,10 +18,6 @@ import { exportReviewCsv } from "@/utils/exportCsv";
 
 const stepOrder: ReviewStep[] = ["intake", "application", "verify", "results"];
 
-function nextStep(step: ReviewStep) {
-  return stepOrder[Math.min(stepOrder.indexOf(step) + 1, stepOrder.length - 1)];
-}
-
 function previousStep(step: ReviewStep) {
   return stepOrder[Math.max(stepOrder.indexOf(step) - 1, 0)];
 }
@@ -139,7 +135,7 @@ export default function Home() {
     setActiveStep("intake");
   }
 
-  const stepSummary = activeStep === "intake" && !hasQueue ? "Choose upload or sample labels to start." : selected?.application.id ?? "No packet selected";
+  const stepSummary = activeStep === "intake" && !hasQueue ? "Choose upload or demo cases to start." : selected?.application.id ?? "No packet selected";
 
   return (
     <GovShell packetCount={packets.length} modeLabel="Sample evidence mode">
@@ -155,7 +151,7 @@ export default function Home() {
           <div className="current-card" aria-label="Current selected packet">
             <span>Current packet</span>
             <strong>{selected?.application.id ?? "None selected"}</strong>
-            <small>{selected?.application.brand ?? "Upload or restore samples"}</small>
+            <small>{selected?.application.brand ?? "Upload or try demo cases"}</small>
             <OutcomeBadge outcome={selected?.report?.outcome} />
           </div>
         </section>
